@@ -131,6 +131,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-bottom: 1.5rem;
             font-size: 0.9rem; 
         }
+        .back-link {
+            margin-top: 20px;
+            display: block;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .back-link:hover {
+            color: #A40404;
+        }
     </style>
 </head>
 <body>
@@ -152,6 +163,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <button type="submit" class="login-btn">Login</button>
         </form>
+
+        <a href="../index.php" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
     </div>
 </body>
 </html>

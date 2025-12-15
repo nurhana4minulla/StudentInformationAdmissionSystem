@@ -357,10 +357,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             padding: 15px; border-radius: 8px; margin-bottom: 20px;
         }
         .error-summary ul { margin: 5px 0 0 20px; padding: 0; }
+        .back-nav {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .back-nav i {
+            margin-right: 8px;
+        }
+        .back-nav:hover {
+            color: #A40404; 
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <a href="../index.php" class="back-nav">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
         <div class="header">
             <h1>WMSU Online Admission Application</h1>
         </div>
